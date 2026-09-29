@@ -1,0 +1,39 @@
+# Development API keys (only loaded when Seed:UseDevData is true in Development)
+@host = http://localhost:5080
+@acmeAdmin = sk_acme01_dev-acme-admin-000000000001
+@acmeReader = sk_acme02_dev-acme-reader-00000000002
+@globexMember = sk_globex1_dev-globex-member-0000003
+@initechAdmin = sk_initech1_dev-initech-admin-000004
+
+### Who am I? (tenant, plan, limits)
+GET {{host}}/me
+X-Api-Key: {{acmeAdmin}}
+
+### Create a project as Acme
+POST {{host}}/projects
+X-Api-Key: {{acmeAdmin}}
+Content-Type: application/json
+
+{ "name": "Acme Website", "description": "Marketing site rebuild" }
+
+### List Acme's projects
+GET {{host}}/projects
+X-Api-Key: {{acmeAdmin}}
+
+### Try to read Acme's project as Globex (paste the id): 404
+GET {{host}}/projects/PASTE-ACME-PROJECT-ID
+X-Api-Key: {{globexMember}}
+
+### A reader can't create: 403
+POST {{host}}/projects
+X-Api-Key: {{acmeReader}}
+Content-Type: application/json
+
+{ "name": "Not allowed" }
+
+### Enterprise tenant: stored in its own container
+POST {{host}}/projects
+X-Api-Key: {{initechAdmin}}
+Content-Type: application/json
+
+{ "name": "Initech ERP" }

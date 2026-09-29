@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{225C928E-6CF1-4305-9209-3FF5685FF579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaasApi", "src\SaasApi\SaasApi.csproj", "{ED439DCA-9FF5-4B11-AF2B-3F2B61B7AFB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaasApi.Cosmos", "src\SaasApi.Cosmos\SaasApi.Cosmos.csproj", "{6D523487-AECE-4B7A-8046-AD18964D633F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F4C7A12F-3704-42D1-AB48-20A17DB74532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoisyNeighborDemo", "samples\NoisyNeighborDemo\NoisyNeighborDemo.csproj", "{117077E1-B060-43C6-917B-42B116130B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BDC57B46-045A-45E1-A06D-6CCE6AEEB2E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaasApi.Tests", "tests\SaasApi.Tests\SaasApi.Tests.csproj", "{E2483AB3-2E03-4C16-B5BA-893E34D5BA7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED439DCA-9FF5-4B11-AF2B-3F2B61B7AFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED439DCA-9FF5-4B11-AF2B-3F2B61B7AFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED439DCA-9FF5-4B11-AF2B-3F2B61B7AFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED439DCA-9FF5-4B11-AF2B-3F2B61B7AFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D523487-AECE-4B7A-8046-AD18964D633F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D523487-AECE-4B7A-8046-AD18964D633F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D523487-AECE-4B7A-8046-AD18964D633F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D523487-AECE-4B7A-8046-AD18964D633F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117077E1-B060-43C6-917B-42B116130B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117077E1-B060-43C6-917B-42B116130B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117077E1-B060-43C6-917B-42B116130B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117077E1-B060-43C6-917B-42B116130B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2483AB3-2E03-4C16-B5BA-893E34D5BA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2483AB3-2E03-4C16-B5BA-893E34D5BA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2483AB3-2E03-4C16-B5BA-893E34D5BA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2483AB3-2E03-4C16-B5BA-893E34D5BA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED439DCA-9FF5-4B11-AF2B-3F2B61B7AFB6} = {225C928E-6CF1-4305-9209-3FF5685FF579}
+		{6D523487-AECE-4B7A-8046-AD18964D633F} = {225C928E-6CF1-4305-9209-3FF5685FF579}
+		{117077E1-B060-43C6-917B-42B116130B18} = {F4C7A12F-3704-42D1-AB48-20A17DB74532}
+		{E2483AB3-2E03-4C16-B5BA-893E34D5BA7B} = {BDC57B46-045A-45E1-A06D-6CCE6AEEB2E7}
+	EndGlobalSection
+EndGlobal
